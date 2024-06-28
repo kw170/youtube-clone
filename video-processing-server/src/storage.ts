@@ -17,7 +17,7 @@ const localProcessedVideoPath = "./processed-videos"
 // Creates the local directories forr raw and processed videos
 export function setupDirectories() {
   ensureDirectoryExistence(localRawVideoPath)
-  ensureDirectoryExistence(localRawVideoPath)
+  ensureDirectoryExistence(localProcessedVideoPath)
 }
 
 
@@ -25,7 +25,7 @@ export function setupDirectories() {
  * Converts raw video to processed video locally
  *
  * @param rawVideoName - The name of the file to convert from {@link localRawVideoPath}.
- * @param processVideoName - The name of the file to convert to {@link localProcessedVideoPath}.
+ * @param processedVideoName - The name of the file to convert to {@link localProcessedVideoPath}.
  * @returns A promise that resolves when the video has been converted.
  * */
 export function convertVideo(rawVideoName: string, processedVideoName: string){
