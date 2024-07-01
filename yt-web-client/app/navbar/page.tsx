@@ -6,7 +6,7 @@ import styles from "./navbar.module.css"
 export default function Navbar() {
   return(
     <nav className={styles.nav}>
-      <Link className={styles.logoContainer} href="/">
+      <Link href="/">
         <Image width={90} height={20} src="/youtube-logo.svg" alt="Youtube Logo"/>
       </Link>
     </nav>
